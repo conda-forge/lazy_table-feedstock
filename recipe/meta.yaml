@@ -19,10 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools >=42
+    - wheel
   run:
     - python >=3.6
     - tabulate
-    - tqdm
 
 test:
   imports:
