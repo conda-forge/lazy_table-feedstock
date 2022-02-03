@@ -1,5 +1,5 @@
 {% set name = "lazy_table" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy-table-{{ version }}.tar.gz
-  sha256: 7a9a6ba1e667827740d379ec89ea9c78973be6a38fa8c18f004863ad30148534
+  sha256: cc724a895ad55f3b65129a95f4bab58b5787a03d282470c4ddb02ff33386d433
 
 build:
   number: 0
@@ -19,10 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools >=42
+    - wheel
   run:
     - python >=3.6
     - tabulate
-    - tqdm
 
 test:
   imports:
